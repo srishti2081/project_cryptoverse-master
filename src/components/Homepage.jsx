@@ -16,7 +16,6 @@ const Homepage = () => {
   if (isFetching) return <Loader />; 
   return (
      <section className="foto" style= {{ backgroundImage: 'url("https://user-images.githubusercontent.com/62838398/231455853-4766046b-fada-4af8-8cda-b3cc7451e0f7.png")'}}>
-    
       <Title level={2}  style={{padding: '10px 0px 0px 10px '}}className="heading" >Global Crypto Stats</Title>
       <Row gutter={[32, 32]}>
         <Col span={12}><Statistic  title="Total Cryptocurrencies" value={globalStats.total} /></Col>
@@ -27,7 +26,6 @@ const Homepage = () => {
         <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
       </Row>
       <div className="home-heading-container" >
-        
         <Title level={2} className="home-title" ><div style={{padding: '10px 0px 0px 10px '}}>Top 10 Cryptos In The World</div></Title>
         <Title level={3} className="show-more"><Link to="/cryptocurrencies"><div style={{padding: '0px 10px 10px 0px '}}>Show more</div></Link></Title>
       </div>
@@ -40,6 +38,5 @@ const Homepage = () => {
     </section>
   );
 };
-
 export default Homepage;
 

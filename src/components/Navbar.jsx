@@ -28,11 +28,11 @@ const Navbar = () => {
   }, [screenSize]);
 
   return (
-    <div className="nav-container" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80")' } }>
+    <div className="nav-container" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80")'}}>
       <div className="logo-container">
         {/* <Avatar src={icon} size="large" /> */}
-        <Typography.Title level={2} className="logo" ><Link to="/">My Cryptoworld</Link></Typography.Title>
-        <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu) }><MenuOutlined /></Button>
+        <Typography.Title level={2} className="logo"><Link to="/">My Cryptoworld</Link></Typography.Title>
+        <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu && (
       <Menu theme="dark">
